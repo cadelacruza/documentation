@@ -1,0 +1,52 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: flex;
+}
+
+ul{
+  list-style: none;
+}
+
+#navbar{
+  background: #eee;
+  max-width: 200px;
+  height: 100vh;
+  position: fixed;
+}
+
+#navbar header{
+  background: #eee;
+  padding: 1rem;
+}
+
+#navbar a{
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+  color: black;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#main-doc{
+  background: #ddd;
+  flex: 1;
+}
+
+
+#main-doc .main-section{
+  padding-left: 15rem;
+  padding-top: 1rem ;
+}
+
+@media (max-width: 767px) {
+  body{
+    background: red;
+  }
+}
